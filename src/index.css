@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-brand: #F46219;
+  --color-brand-hover: #FF5400;
+  
+  --font-brand: "Poppins", sans-serif;
+  --animate-marquee: marquee 50s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+body {
+  font-family: var(--font-brand);
+}
+
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.10); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 6s ease-in-out infinite alternate;
+}
+
+.animate-marquee span {
+  white-space: nowrap;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Plus } from 'lucide-react';
 import Marquee from './Marquee';
 import Hero from './Hero';
 import EssentialsSlider from './EssentialsSlider';

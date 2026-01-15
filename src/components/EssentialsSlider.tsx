@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Opcional: puedes usar flechas estándar "→"
 
 const EssentialsSlider = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const items = [
     { id: 1, label: 'Casual', category: 'Camisas Básicas', price: '29.000', img: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800' },
@@ -15,7 +15,7 @@ const EssentialsSlider = () => {
     { id: 8, label: 'Football', category: 'Jerseys Replicas', price: '35.000', img: 'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=800' },
   ];
 
-  const scroll = (direction) => {
+  const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { clientWidth } = scrollRef.current;
       // Calcula el desplazamiento: una página completa (4 cards en desktop)
@@ -93,7 +93,7 @@ const EssentialsSlider = () => {
       </div>
 
       {/* CSS INLINE PARA OCULTAR SCROLLBAR (Opcional si no usas plugin tailwind-scrollbar-hide) */}
-      <style jsx>{`
+      <style>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }

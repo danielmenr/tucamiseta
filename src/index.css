@@ -30,3 +30,7 @@ body {
 .animate-marquee span {
   white-space: nowrap;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

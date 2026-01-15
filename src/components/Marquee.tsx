@@ -16,7 +16,7 @@ const Marquee: React.FC = () => {
   ];
 
   return (
-    <div className="bg-neutral-950 py-8 md:py-5 overflow-hidden">
+    <div className="bg-neutral-950 py-5 overflow-hidden">
       <div className="flex animate-marquee w-max items-center">
         {[0, 1].map((groupIndex) => (
           <div key={groupIndex} className="flex items-center">

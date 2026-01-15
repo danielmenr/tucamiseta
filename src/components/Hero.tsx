@@ -61,7 +61,7 @@ const Hero = () => {
     ];
 
     return (
-        <section className="relative h-[84vh] w-full overflow-hidden">
+        <section className="relative h-[84vh] md:h-[70vh] w-full overflow-hidden">
             {/* Viewport de Embla */}
             <div className="h-full overflow-hidden" ref={emblaRef}>
                 <div className="flex h-full">
@@ -72,7 +72,7 @@ const Hero = () => {
                                 <img src={slide.image} alt={slide.tag} className="w-full h-full object-cover grayscale-10 contrast-110 animate-slow-zoom" />
                             </div>
                             <div className="absolute inset-0 bg-linear-to-t from-black/70 to-black/5" />
-                            <div className="relative h-full flex flex-col justify-end pb-20 px-6 w-full">
+                            <div className="relative h-full flex flex-col justify-end pb-20 px-6 w-full md:w-[70%] md:mx-auto md:px-0">
                                 <div className="flex items-center gap-3 mb-4">
                                     <span className="w-6 h-0.5 bg-white"></span>
                                     <span className="text-white text-xs font-bold uppercase tracking-[0.3em]">
@@ -102,7 +102,7 @@ const Hero = () => {
             </div>
 
             {/* --- DOTS INDICATORS (SHARP & INTERACTIVE) --- */}
-            <div className="absolute bottom-8 right-6 flex gap-3 z-20">
+            <div className="absolute bottom-8 right-6 flex gap-3 z-20 md:right-[15%]">
                 {scrollSnaps.map((_, index) => (
                     <button
                         key={index}
@@ -117,7 +117,7 @@ const Hero = () => {
             </div>
 
             {/* Contador numérico sutil (Opcional, muy estilo editorial) */}
-            <div className="absolute bottom-8 left-6 text-white/40 font-black text-xs tracking-widest z-20">
+            <div className="absolute bottom-8 left-6 text-white/40 font-black text-xs tracking-widest z-20 md:left-[15%]">
                 0{selectedIndex + 1} / 0{slides.length}
             </div>
         </section>

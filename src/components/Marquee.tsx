@@ -8,15 +8,15 @@ const Marquee: React.FC = () => {
   // En un futuro, estos datos vendrán de tu API (ej. useEffect + fetch)
   const items: MarqueeItem[] = [
     { value: "Made in Cúcuta York" },
-    { value: "Calidad Superior // 1.1" },
+    { value: "Calidad Superior / 1.1" },
     { value: "Envíos Nacionales" },
     { value: "sportswear transpirable" },
     { value: "100% algodón" },
-    { value: "new drop // 🇨🇴 Selección Colombia 2026" },
+    { value: "new drop / 🇨🇴 Selección Colombia 2026" },
   ];
 
   return (
-    <div className="bg-neutral-950 py-8 overflow-hidden">
+    <div className="bg-neutral-950 py-8 md:py-5 overflow-hidden">
       <div className="flex animate-marquee w-max items-center">
         {[0, 1].map((groupIndex) => (
           <div key={groupIndex} className="flex items-center">

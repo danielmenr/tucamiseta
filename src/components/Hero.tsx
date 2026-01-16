@@ -71,7 +71,7 @@ const Hero = () => {
                             <div className='w-full h-full absolute top-0 left-0 overflow-hidden'>
                                 <img src={slide.image} alt={slide.tag} className="w-full h-full object-cover grayscale-10 contrast-110 animate-slow-zoom" />
                             </div>
-                            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-black/5" />
+                            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/35 md:to-black/0 md:bg-linear-to-r" />
                             <div className="relative h-full flex flex-col justify-end pb-20 px-6 w-full md:w-[70%] md:mx-auto md:px-0">
                                 <div className="flex items-center gap-3 mb-4">
                                     <span className="w-6 h-0.5 bg-white"></span>

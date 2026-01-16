@@ -17,7 +17,7 @@ const Home: React.FC = () => {
                     Nuestros Productos
                 </h2>
             </div>
-            <div className="flex overflow-x-auto px-6 gap-6 md:w-[80%] md:mx-auto md:px-0 no-scrollbar">
+            <div className="flex overflow-x-auto overflow-y-hidden px-6 gap-6 md:w-[80%] md:mx-auto md:px-0 no-scrollbar">
                 <div className="shrink-0 group">
                     <div className='w-64 h-80 bg-neutral-900 relative overflow-hidden'>
                         <img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/3023552-0001V1.jpg" className="w-full h-full object-cover brightness-95 group-hover:scale-105 group-hover:brightness-105 duration-500" />
@@ -31,6 +31,21 @@ const Home: React.FC = () => {
                     </span>
                     <span className="font-light text-2xl leading-none tracking-tighter group-hover:underline">
                         Desde <b className='font-black italic'>$25.000</b>
+                    </span>
+                </div>
+                <div className="shrink-0 group">
+                    <div className='w-64 h-80 bg-neutral-900 relative overflow-hidden'>
+                        <img src="/conjuntos.pngit g" className="w-full h-full object-cover brightness-95 group-hover:scale-105 group-hover:brightness-105 duration-500" />
+                        <div className='p-3 absolute top-6 right-6 bg-white items-center justify-center flex group-hover:text-white duration-300'>
+                            <div className='w-0 h-full absolute bg-black top-0 left-0 group-hover:w-full duration-200'></div>
+                            <ArrowUpRight size={20} className='relative group-hover:scale-110 duration-200' />
+                        </div>
+                    </div>
+                    <span className="text-xs font-bold uppercase tracking-widest opacity-40 mt-4 mb-2 block">
+                        Conjuntos deportivos
+                    </span>
+                    <span className="font-light text-2xl leading-none tracking-tighter group-hover:underline">
+                        Desde <b className='font-black italic'>$40.000</b>
                     </span>
                 </div>
                 <div className="shrink-0 group">
